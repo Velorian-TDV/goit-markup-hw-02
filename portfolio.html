@@ -4,42 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio |Portfolio|</title>
   </head>
   <body>
-    <!-- header block-->
-    <header>
-      <!-- Navigator -->
+    <!---------------- Header block ---------------->
+    <header class="header">
+      <!---------------- Navigator ---------------->
       <nav class="navigator">
-        <a href="./index.html" class="navigator-logo"> WebStudio </a>
+        <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
         <ul class="navigator-list">
           <li class="navigator-list-item">
-            <a href="./index.html">Studio</a>
+            <a class="navigator-list-item-link" href="./index.html">Studio</a>
           </li>
           <li class="navigator-list-item">
-            <a href="./portfolio.html">Portfolio</a>
+            <a class="navigator-list-item-link" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li class="navigator-list-item">
-            <a href="">Contacts</a>
+            <a class="navigator-list-item-link" href="">Contacts</a>
           </li>
         </ul>
       </nav>
-      <!-- addres -->
+      <!---------------- addres ---------------->
       <address class="address">
         <ul class="address-list">
           <li class="address-list-item">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="address-list-item-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li class="address-list-item">
-            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="address-list-item-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
     </header>
-    <!-- Main block -->
+
+    <!---------------- Main block ---------------->
     <main>
-      <!-- filter -->
+      <!------------------ filter ------------------>
       <section class="filters">
         <h1 class="filters-header"></h1>
         <ul class="filters-list">
@@ -56,6 +69,7 @@
           </li>
         </ul>
 
+        <!------------------ Portfolio list ------------------>
         <ul class="portfolioList">
           <li class="portfolioList-item">
             <img
@@ -152,9 +166,10 @@
         </ul>
       </section>
     </main>
-    <!-- Footer block-->
+
+    <!------------------ Footer block ------------------>
     <footer class="footer">
-      <a href="./index.html"> WebStudio </a>
+      <a href="./index.html" class="logo"><span>Web</span>Studio </a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
