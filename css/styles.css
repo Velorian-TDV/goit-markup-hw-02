@@ -34,10 +34,62 @@
 
     /* Hero text color and button's*/
     --hero-text: #FFFFFF;
+
+    /* Background color for card's and body*/
+    --body-background: #FFFFFF;
 }
 body{
-    font-family: 'Roboto','Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
+    /* Typography */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+    /* Visual */
     color: var(--text);
+    background-color: var(--body-background);
+}
+
+/* ------------------------------------------------------------------- */
+/* Сommon styles */
+/* ------------------------------------------------------------------- */
+
+/* class for hidden header */
+.visually-hidden {
+    /* Positioning */
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+
+    /* Visual */
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+/* class for header with the same style */
+.second-level-header{
+    /* Typography */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    
+    /* Visual */
+    color: var(--dark);
+}
+/* class that hide all dots in list's */
+.listDecoration{
+    /* Visual */
+    list-style-type: none;
+}
+/* class that hide all underlines in link's*/
+.linkDecoration{
+    /* Visual */
+    text-decoration: none;
 }
 
 /* ------------------------------------------------------------------- */
@@ -45,14 +97,12 @@ body{
 /* ------------------------------------------------------------------- */
 .logo{
     /* Typography */
-    font-family: 'Raleway';
-    font-style: normal;
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
     
     /* Visual */
     color: var(--dark);
@@ -70,17 +120,15 @@ body{
 }
 .navigator-list-item-link{
     /* Typography */
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
     
     /* Visual */
     color: var(--dark);
 }
-.navigator-list-item-link:active{
+.navigator-list-item-link:hover{
     /* Visual */
     color: var(--pressed-state);
 }
@@ -88,19 +136,21 @@ body{
     /* Visual */
     color: var(--pressed-state);
 }
-.address-list-item-link{
+.address{
     /* Typography */
     font-style: normal;
+}
+.address-list-item-link{
+    /* Typography */
     font-weight: 400;
     font-size: 16px;
-    text-decoration: none;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     
     /* Visual */
     color: var(--text);
 }
-.address-list-item-link:active{
+.address-list-item-link:hover{
     /* Visual */
     color: var(--pressed-state);
 }
@@ -120,12 +170,11 @@ body{
     /* Visual */
     color: var(--light);
 }
-.footer p {
+.footer-paragraph{
     /* Typography */
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     
     /* Visual */
@@ -143,10 +192,9 @@ body{
 }
 .firstBlock-header{
     /* Typography */
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     
@@ -155,10 +203,11 @@ body{
 }
 .firstBlock-button{
     /* Typography */
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 
     /* Visual */
     background-color: var(--primary-brand);    
@@ -171,37 +220,27 @@ body{
 .firstBlock-button:hover{
     background-color: var(--pressed-state);
 }
+.firstBlock-button:focus{
+    background-color: var(--pressed-state);
+}
 
 /* ---------- Second block ---------- */
-.secondBlock-list-item h3{
+.secondBlock-list-item-header{
     /* Typography */
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     
     /* Visual */
     color: var(--dark);
 }
-.secondBlock-list-item p{
+.secondBlock-list-item-paragraph{
     /* Typography */
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-/* ---------- Third block ---------- */
-.thirdBlock-header{
-    /* Typography */
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-
-    /* Visual */
-    color: var(--dark);
 }
 
 /* ---------- Fourth block ---------- */
@@ -209,37 +248,25 @@ body{
     /* Visual */
     background-color: var(--light);
 }
-.fourthBlock-header{
-    /* Typography */
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    
-    /* Visual */
-    columns: var(--dark);
+.fourthBlock-list-item{
+    background-color: var(--body-background);
 }
-.fourthBlock-list-item h3{
+.fourthBlock-list-item-header{
     /* Typography */
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
 
     /* Visual */
     color: var(--dark);
 }
-.fourthBlock-list-item p{
+.fourthBlock-list-item-paragraph{
     /* Typography */
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
 }
@@ -249,12 +276,12 @@ body{
 /* ------------------------------------------------------------------- */
 
 /* ---------- Filter ---------- */
-.filters-list-item button{
+.filters-list-item-button{
     /* Typography */
-    font-style: normal;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 
     /* Visual */
@@ -265,7 +292,15 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-.filters-list-item button:hover{
+.filters-list-item-button:hover{
+    /* Visual */
+    background: var(--pressed-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 2px 1px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--hero-text);
+}
+.filters-list-item-button:focus{
     /* Visual */
     background: var(--pressed-state);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -274,15 +309,21 @@ body{
     color: var(--hero-text);
 }
 
-/* ---------- Filter ---------- */
+/* ---------- Portfolio ---------- */
 .portfolioList-list-header{
     /* Typography */
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 
     /* Visual */
     color: var(--dark);
+}
+.portfolioList-list-paragraph{
+    /* Typography */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
