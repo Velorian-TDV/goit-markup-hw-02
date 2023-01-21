@@ -218,9 +218,11 @@ body{
     cursor: pointer;
 }
 .firstBlock-button:hover{
+    /* Visual */
     background-color: var(--pressed-state);
 }
 .firstBlock-button:focus{
+    /* Visual */
     background-color: var(--pressed-state);
 }
 
@@ -249,6 +251,7 @@ body{
     background-color: var(--light);
 }
 .fourthBlock-list-item{
+    /* Visual */
     background-color: var(--body-background);
 }
 .fourthBlock-list-item-header{
